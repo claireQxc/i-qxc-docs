@@ -44,5 +44,11 @@ export const en = sidebar({
         },
       ],
     },
+    {
+      text: "Microfrontends",
+      icon: "note",
+      prefix: "microfrontends/",
+      children: ["prepare"],
+    },
   ],
 });
