@@ -50,5 +50,11 @@ export const en = sidebar({
       prefix: "microfrontends/",
       children: ["prepare"],
     },
+    {
+      text: "Nginx",
+      icon: "note",
+      prefix: "nginx/",
+      children: ["start"],
+    },
   ],
 });
