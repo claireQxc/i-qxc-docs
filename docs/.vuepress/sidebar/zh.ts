@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const zh = sidebar({
-  "/": [
+  "/zh/": [
     "",
     "home",
     "slide",
@@ -13,10 +13,28 @@ export const zh = sidebar({
       children: "structure",
     },
     {
-      text: "Microfrontends",
+      text: "Posts",
       icon: "note",
-      prefix: "microfrontends/",
-      children: ["prepare", "singlespa", "qiankun", "slefqiankun"]
+      prefix: "posts/",
+      children: [
+        {
+          text: "Microfrontends",
+          icon: "note",
+          prefix: "microfrontends/",
+          children: [
+            {
+              text: "singlespa",
+              icon: "edit",
+              link: "singlespa/start"
+            },"prepare"],
+        },
+        {
+          text: "Nginx",
+          icon: "note",
+          prefix: "nginx/",
+          children: ["start"],
+        },
+      ],
     },
   ],
 });

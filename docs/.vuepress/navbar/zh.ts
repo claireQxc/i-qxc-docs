@@ -10,38 +10,23 @@ export const zh = navbar([
     prefix: "/zh/posts/",
     children: [
       {
-        text: "文章 1-4",
+        text: "微前端",
         icon: "edit",
-        prefix: "article/",
+        prefix: "microfrontends/",
         children: [
-          { text: "文章 1", icon: "edit", link: "article1" },
-          { text: "文章 2", icon: "edit", link: "article2" },
-          "article3",
-          "article4",
+          {
+            text: "singlespa",
+            icon: "edit",
+            link: "singlespa/start"
+          },
+          "prepare"
         ],
       },
       {
-        text: "文章 5-12",
+        text: "nginx",
         icon: "edit",
-        children: [
-          {
-            text: "文章 5",
-            icon: "edit",
-            link: "article/article5",
-          },
-          {
-            text: "文章 6",
-            icon: "edit",
-            link: "article/article6",
-          },
-          "article/article7",
-          "article/article8",
-        ],
-      },
-      { text: "文章 9", icon: "edit", link: "article9" },
-      { text: "文章 10", icon: "edit", link: "article10" },
-      "article11",
-      "article12",
+        link: "nginx/start"
+      }
     ],
   },
   {

@@ -1,7 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export const en = sidebar({
-  "/": [
+  "/en/": [
     "",
     "home",
     "slide",
@@ -13,48 +13,30 @@ export const en = sidebar({
       children: "structure",
     },
     {
-      text: "Articles",
+      text: "Posts",
       icon: "note",
       prefix: "posts/",
       children: [
         {
-          text: "Articles 1-4",
+          text: "Microfrontends",
           icon: "note",
-          collapsable: true,
-          prefix: "article/",
-          children: ["article1", "article2", "article3", "article4"],
-        },
-        {
-          text: "Articles 5-12",
-          icon: "note",
+          prefix: "microfrontends/",
           children: [
             {
-              text: "Articles 5-8",
-              icon: "note",
-              collapsable: true,
-              prefix: "article/",
-              children: ["article5", "article6", "article7", "article8"],
+              text: "singlespa",
+              icon: "edit",
+              link: "singlespa/start"
             },
-            {
-              text: "Articles 9-12",
-              icon: "note",
-              children: ["article9", "article10", "article11", "article12"],
-            },
+            "prepare"
           ],
         },
+        {
+          text: "Nginx",
+          icon: "note",
+          prefix: "nginx/",
+          children: ["start"],
+        },
       ],
-    },
-    {
-      text: "Microfrontends",
-      icon: "note",
-      prefix: "microfrontends/",
-      children: ["prepare"],
-    },
-    {
-      text: "Nginx",
-      icon: "note",
-      prefix: "nginx/",
-      children: ["start"],
     },
   ],
 });

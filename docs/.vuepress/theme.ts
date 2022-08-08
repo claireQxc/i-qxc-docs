@@ -7,7 +7,7 @@ export default hopeTheme({
 
   author: {
     name: "Mrs.Claire",
-    url: "https://mrhope.site",
+    url: "http://www.i-qxc.com",
   },
 
   iconAssets: "iconfont",
@@ -55,7 +55,7 @@ export default hopeTheme({
   },
 
   locales: {
-    "/": {
+    "/en/": {
       // navbar
       navbar: navbar.en,
 
@@ -95,7 +95,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/guide/encrypt.html": ["1234"],
+      "/en/guide/encrypt.html": ["1234"],
       "/zh/guide/encrypt.html": ["1234"],
     },
   },
